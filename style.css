@@ -1,0 +1,132 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    background-color: #111;
+}
+
+/* Фон для всего сайта */
+header {
+    background: url('https://images.unsplash.com/photo-1460896988597-cb460d268a4a?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjYxOXwwfDF8c2VhY2h8MXx8ZGVzZXJ0fGVufDB8fHx8fDE2Nzg4NTgxNzg&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+header .subtitle {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Основной контент */
+.main-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 60px 20px;
+    margin-top: -40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content-container h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.content-container p,
+.content-container ul {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+ul li::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #4b6cb7;
+}
+
+/* Подвал */
+footer {
+    background-color: #182848;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .content-container h2 {
+        font-size: 2rem;
+    }
+
+    .content-container h3 {
+        font-size: 1.7rem;
+    }
+}
